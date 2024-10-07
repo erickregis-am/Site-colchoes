@@ -1,0 +1,151 @@
+.log-sig-ask{
+    display: flex;
+    background: linear-gradient(45deg, rgba(21,77,120,1) 37%, rgba(66,189,255,1) 89%);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.log-sig-container{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+    gap: 0.5rem;
+    
+}
+
+.text-presentation{
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.buttonLogCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttonSigCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttonSigCont a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    max-height: 100vh;
+}
+
+
+.buttonLogCont a{
+    text-decoration: none;
+    cursor: pointer;
+    max-height: 100vh;
+}
+
+#btnLog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #1e6ba6;
+}
+
+#btnLog p{color: white; font-size: 1.5rem; font-weight: bold;}
+
+#btnSig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#btnSig p{color: rgb(24, 149, 217); font-size: 1.5rem; font-weight: bold;}
+
+#log{
+    width: 16rem;
+    height: 16rem;
+    fill: white;
+    stroke: #1e6ba6;
+}
+
+#sig{
+    width: 16rem;
+    height: 16rem; 
+    fill: #1895d9;
+    stroke: white;
+}
+
+@media (max-width: 768px){
+    .log-sig-ask{
+        gap: 5rem;
+        flex-direction: column;
+    }
+
+    .text-container{
+        height: auto;
+        text-align: center;
+    }    
+
+    .text-presentation{
+        font-size: 1.25rem;
+    }
+
+    #log{
+        width: 9rem;
+        height: 9rem;
+        fill: white;
+        stroke: #1e6ba6;
+    }
+    
+    #sig{
+        width: 9rem;
+        height: 9rem; 
+        fill: #1895d9;
+        stroke: white;
+    }
+
+    #btnLog{
+        width: auto;
+        padding: 1rem;
+    }
+
+    #btnSig{
+        width: auto;
+        padding: 1rem;
+    }
+
+    #btnLog p{color: white; font-size: 1.2rem; font-weight: bold;}
+
+    #btnSig p{color: rgb(24, 149, 217); font-size: 1.2rem; font-weight: bold;}
+
+    .log-sig-container{
+        flex-direction: column;
+        height: 60%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,138 @@
+.buttonSubmitContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSubmit{
+    margin-top: 3rem;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius: 8px;
+    background-color: #1895d9;
+    cursor: pointer;
+}
+
+.buttonSubmit:hover{
+    background-color: #0a6ebd;
+}
+
+.buttonSubmitRegister{
+    margin-top: 3rem;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    width: 12rem;
+    border-radius: 8px;
+    background-color: #1895d9;
+    cursor: pointer;
+}
+
+.buttonSubmitRegister:hover{
+    background-color: #0a6ebd;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+
+.buttonLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 8px;
+    background-color: #1895d9;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.buttonLinkMenu{
+    display: none;
+}
+
+#cartButton{
+    background-color: white;
+    color: #0a6ebd;
+}
+
+#cartButton:hover{
+    .confirmIcon{
+        height: 0.7rem;
+        width: 0.7rem;
+        transition: 0.3s;
+    };
+    background-color: rgb(174, 174, 174);
+}
+
+.buttonLink:hover{
+    background-color: #0a6ebd;
+    font-size: 0.7rem;
+    transition: 0.3s;
+}
+
+.confirmIcon{
+    height: 1.25rem;
+    width: 1.25rem;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px){
+    .buttonLink{
+        display: none;
+    }
+
+    .buttonLinkMenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.7rem;
+        color: white;
+        border-radius: 8px;
+        background-color: #1895d9;
+        cursor: pointer;
+        width: auto;
+        height: auto;
+        padding: 1rem;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .buttonLinkMenu:active{
+        background-color: #0a6ebd;
+        transition: 0.3s;
+        font-size: 0.4rem;
+    }
+
+    #cartButtonMenu{
+        background-color: white;
+        color: #0a6ebd;
+    }
+    
+    #cartButtonMenu:active{
+        .confirmIcon{
+            height: 0.4rem;
+            width: 0.4rem;
+            transition: 0.3s;
+        };
+        background-color: rgb(174, 174, 174);
+    }
+
+    .confirmIconMenu{
+        height: 0.9rem;
+        width: 0.9rem;
+        transition: 0.3s;
+    }
+}
+

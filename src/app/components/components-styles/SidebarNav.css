@@ -1,0 +1,215 @@
+:root{
+    --site-blue: rgb(57, 181, 248);
+}
+
+.blueSite{
+    color: var(--site-blue, blue);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    height: 100vh;
+    overflow: auto;
+}
+
+.container  .lateral-bar {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    height: 100vh;
+    border: 1px solid rgb(202, 202, 202);
+    align-items: center;
+    box-shadow: 2px 2px 2rem -1.3rem rgb(0, 0, 0);
+}
+
+.tripleMenu{
+    display: none;
+}
+
+.container .lateral-bar a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    max-height: 100vh;
+}
+
+#home-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    text-align: end;
+    font-size: 1rem;
+    color: #00288D;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem; 
+}
+
+#home-menu img{
+    width: 10rem;
+    height: 8rem;
+}
+
+#home-menu p{
+    text-align: center;
+}
+ 
+.container-itens-bar{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5.5rem;
+}
+
+.container-itens-bar .itens-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+
+}
+
+.container-itens-bar-menu{
+    display: none;
+}
+
+#perfil:hover{
+    color: rgb(134, 134, 134);
+}
+
+#catalogo:hover{
+    color: rgb(134, 134, 134);
+}
+
+#sobre:hover{
+    color: rgb(134, 134, 134);
+}
+
+#settings:hover{
+    color: rgb(134, 134, 134);
+}
+
+
+.menu{
+    border: 0.1rem solid rgb(206, 206, 206);
+    border-right: 0.125rem;
+}
+ 
+
+@media (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .closeIcon{
+        color: #2a8bdb;
+    }
+    
+    .menu{
+        border: 0;
+        padding: 0.1rem;
+    }
+
+    .MenuSpan{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tripleMenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        background-color: white;
+        transition: 0.3s;
+        border-radius: 0.5rem;
+        margin-right: 2rem;
+    }
+
+    .tripleMenu:active{
+        background-color: rgb(192, 192, 192);
+        transition: 0.3s;
+    }
+
+    .container  .lateral-bar {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .container .lateral-bar a{
+        text-decoration: none;
+    }
+    
+    #home-menu{
+        width: 100%;
+        height: 100%;
+    }
+
+    #home-menu img{
+        height: 3rem;
+        width: 4rem;
+    }
+
+    .container-itens-bar{
+        display: none;
+        gap: 1rem;
+    }
+    
+    .container-itens-bar .itens-bar{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        align-items: center;
+    }
+    
+    .container-itens-bar-menu{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: self-end;
+        margin-top: 4.75rem;
+        gap: 1rem;
+        padding: 1rem;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        background-color: rgba(107, 107, 107, 0.822);
+    }
+
+    .container-itens-bar-menu .itens-bar{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        border-radius: 0.5rem;
+        border: 2px white;
+    }
+
+    #perfil:active{
+        color: rgb(227, 227, 227);
+    }
+    
+    #catalogo:active{
+        color: rgb(227, 227, 227);
+    }
+    
+    #sobre:active{
+        color: rgb(227, 227, 227);
+    }
+    
+    #settings:active{
+        color: rgb(227, 227, 227);
+    }
+}

@@ -1,0 +1,43 @@
+.inputContainer{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: 1px solid #757474;
+    border-radius: 8px; 
+}
+
+.inputContainer input{
+    width: 95%;
+}
+
+.inputIcons{
+    color: #757474;
+}
+
+.iconContainer{
+    pointer-events: none;
+}
+
+.iconButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.iconButton:hover{
+    background-color: #ededed;
+}
+
+.inputBox{
+    border: none;
+    outline: none;
+}
+

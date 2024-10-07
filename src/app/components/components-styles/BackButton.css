@@ -1,0 +1,24 @@
+.backButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+}
+
+.back{
+    text-decoration: none;
+    color: #757474;
+}
+
+.back:hover{
+    color: #a8a8a8
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+

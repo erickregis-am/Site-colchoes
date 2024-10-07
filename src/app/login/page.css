@@ -1,0 +1,95 @@
+.login-page{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(24, 149, 217);
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxNzRjNzkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1iZWQtZG91YmxlIj48cGF0aCBkPSJNMiAyMHYtOGEyIDIgMCAwIDEgMi0yaDE2YTIgMiAwIDAgMSAyIDJ2OCIvPjxwYXRoIGQ9Ik00IDEwVjZhMiAyIDAgMCAxIDItMmgxMmEyIDIgMCAwIDEgMiAydjQiLz48cGF0aCBkPSJNMTIgNHY2Ii8+PHBhdGggZD0iTTIgMThoMjAiLz48L3N2Zz4=");
+    background-position-x:140%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50rem;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 5px 2px 6px 1px  rgb(24, 149, 217);
+}
+
+.things-container{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    width: 100%;
+    height: 80%;
+
+}
+
+
+
+.backButtonDiv{
+    display: flex;
+    align-self: center;
+    width: 80%;
+}
+
+.form-container{
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 1rem;
+}
+
+.textLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: start;
+    gap: 3rem;
+    width: 100%;
+
+}
+
+.textLogin .textDivLogin{
+    font-size: 1rem;
+    border-bottom: 4px solid rgb(24, 149, 217);
+    border-radius: 4px;
+    pointer-events: none;
+    width: 6rem;
+}
+
+.rememberMeContainer{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#forgetPassword{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ 
+
+.rememberMeContainer p{
+    font-size: 0.85rem;
+}
